@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.banner-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: relative;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.banner-slide:hover img {
+  transform: scale(1.05);
+}
+
+.banner-text {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  color: white;
+  text-shadow: 3px 3px 8px #000;
+}
+
+.banner-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 24px;
+}
+
+/* Destaques */
+.destaques {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.destaques h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.destaques-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.moto-card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.moto-card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.moto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.moto-card:hover img {
+  transform: scale(1.05);
+}
+
+.moto-card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.moto-card p {
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.moto-card button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 15px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.moto-card:hover button {
+  opacity: 1;
+}
+
+/* Mais motos - grid */
+.mais-motos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mais-motos h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.mais-motos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Formulário */
+.formulario {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.formulario h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.formulario input, .formulario select, .formulario button {
+  padding: 12px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.formulario input:focus, .formulario select:focus {
+  border-color: #ff0000;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255,0,0,0.3);
+}
+
+.formulario button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #cc0000;
+}

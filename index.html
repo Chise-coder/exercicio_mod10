@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Motos</title>
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Banner inicial -->
+  <section class="banner-carousel">
+    <div class="banner-slide">
+      <img src="https://k10motos.com.br/wp-content/uploads/2023/03/ninja-400-banner-02.png" alt="Banner 1">
+      <div class="banner-text">
+        <h1>Kawasaki Motos</h1>
+        <p>Encontre sua moto dos sonhos!</p>
+      </div>
+    </div>
+    <div class="banner-slide">
+      <img src="https://s3-ap-southeast-2.amazonaws.com/imotor-cms/images_cms/252624_2024ninjah2r-may24-imagebanner-ak.jpg" alt="Banner 2">
+      <div class="banner-text">
+        <h1>Modelos 2025/2026</h1>
+        <p>Confira as novidades!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motos mais procuradas -->
+  <section class="destaques">
+    <h2>Motos Mais Procuradas</h2>
+    <div class="destaques-container">
+      <div class="moto-card">
+        <img src="https://kawasaki.m3parts.com.br/arquivos/1737567014c__25zx636j_40rgn2dls3cg_a.jpg" alt="Zx6r 2025">
+        <h3>Zx6r 2025</h3>
+        <p>R$ 77.190,00</p>
+      </div>
+      <div class="moto-card">
+        <img src="https://www.kawasakione.com.br/wp-content/uploads/2024/08/NINJA-500-15.jpg" alt="Ninja 500 2025">
+        <h3>Ninja 500 2025</h3>
+        <p>R$ 43.320,00</p>
+      </div>
+      <div class="moto-card">
+        <img src="https://kawasaki.m3parts.com.br/arquivos/1739994186c__25zr900s_40sgn1drs3cg_a.jpg" alt="Z900 2026">
+        <h3>Z900 2026</h3>
+        <p>R$ 63.490,00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo completo -->
+  <section class="mais-motos">
+    <h2>Confira Nossas Motos</h2>
+    <div class="mais-motos-grid">
+      <div class="moto-card">
+        <img src="https://consorciokawasakibrasil.com.br/wp-content/uploads/2024/08/z500.png" alt="Z500 2025">
+        <h3>Z500 2025</h3>
+        <p>R$ 38.000,00</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="moto-card">
+        <img src="https://kawasaki.m3parts.com.br/arquivos/1737043524c__25zx1002l_40rgn1drs3cg_a.jpg" alt="Ninja ZX-10R 2025">
+        <h3>Ninja ZX-10R 2025</h3>
+        <p>R$ 92.000,00</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="moto-card">
+        <img src="https://kawasaki.m3parts.com.br/arquivos/1739994186c__25zr900s_40sgn1drs3cg_a.jpg" alt="Z900 2026">
+        <h3>Z900 2026</h3>
+        <p>R$ 63.490,00</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="moto-card">
+        <img src="https://kawasaki.m3parts.com.br/arquivos/1737567014c__25zx636j_40rgn2dls3cg_a.jpg" alt="ZX6R 2025">
+        <h3>ZX6R 2025</h3>
+        <p>R$ 77.190,00</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="moto-card">
+        <img src="https://www.kawasakione.com.br/wp-content/uploads/2024/08/NINJA-500-15.jpg" alt="Ninja 500 2025">
+        <h3>Ninja 500 2025</h3>
+        <p>R$ 43.320,00</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="moto-card">
+        <img src="https://consorciokawasakibrasil.com.br/wp-content/uploads/2024/06/2-1-1-598x374-1.png" alt="Ninja ZX-4R 2025">
+        <h3>Ninja ZX-4R 2025</h3>
+        <p>R$ 59.000,00</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="moto-card">
+        <img src="https://consorciokawasakibrasil.com.br/wp-content/uploads/2021/06/2-3-1-598x374.png" alt="Ninja zx-6R 2022">
+        <h3>Ninja zx-6R 2022</h3>
+        <p>R$ 75.190,00</p>
+        <button>Ver Mais</button>
+      </div>
+      <div class="moto-card">
+        <img src="https://consorciokawasakibrasil.com.br/wp-content/uploads/2021/10/2-6-1-598x374.png" alt="Z1000 2025">
+        <h3>Z1000 2025</h3>
+        <p>R$ 82.000,00</p>
+        <button>Ver Mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Pedido -->
+  <section class="formulario">
+    <h2>Faça seu pedido</h2>
+    <form id="pedido">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="email" id="email" placeholder="E-mail" required>
+      <input type="text" id="telefone" placeholder="Telefone" required>
+      <select id="moto" required>
+        <option value="">Selecione a moto</option>
+        <option value="Zx6r 2025">Zx6r 2025</option>
+        <option value="Ninja ZX-10R KRT 2025">Ninja ZX-10R KRT 2025</option>
+        <option value="Z900 2026">Z900 2026</option>
+      </select>
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </section>
+
+  <!-- jQuery e Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
